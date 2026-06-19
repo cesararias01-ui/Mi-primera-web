@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maravillas del Mundo Natural</title>
+    <style>
+      body {
+        font-family: Georgia, serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f0eb;
+        color: #2c2c2c;
+      }
+
+      header {
+        background-color: #2d6a4f;
+        color: white;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+      }
+
+      main {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 0 1.5rem;
+      }
+
+      h2 {
+        color: #1b4332;
+        border-bottom: 2px solid #2d6a4f;
+        padding-bottom: 0.4rem;
+      }
+
+      .galeria {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin: 1.5rem 0;
+      }
+
+      .galeria figure {
+        flex: 1 1 250px;
+        margin: 0;
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      }
+
+      .galeria img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .galeria figcaption {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.9rem;
+        color: #555;
+        text-align: center;
+      }
+
+      ul {
+        line-height: 2;
+        padding-left: 1.5rem;
+      }
+
+      footer {
+        background-color: #1b4332;
+        color: #ccc;
+        text-align: center;
+        padding: 1.2rem;
+        margin-top: 3rem;
+        font-size: 0.9rem;
+      }
+
+      a {
+        color: #2d6a4f;
+        font-weight: bold;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Etiqueta semántica 1: header -->
+    <header>
+      <h1>Maravillas del Mundo Natural</h1>
+      <p>Un recorrido por los ecosistemas más impresionantes del planeta</p>
+    </header>
+
+    <!-- Etiqueta semántica 2: main -->
+    <main>
+
+      <h2>Galería de paisajes</h2>
+
+      <div class="galeria">
+        <!-- Imagen 1 -->
+        <figure>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/24701-nature-natural-beauty.jpg/1280px-24701-nature-natural-beauty.jpg"
+            alt="Bosque verde exuberante con rayos de luz solar filtrándose entre los árboles"
+          />
+          <figcaption>Bosque tropical lluvioso</figcaption>
+        </figure>
+
+        <!-- Imagen 2: alt descriptivo (antes decía solo "foto") -->
+        <figure>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Fossil_Butte_National_Monument_%28Wyoming%2C_USA%29%2C_july_2012.jpg/1280px-Fossil_Butte_National_Monument_%28Wyoming%2C_USA%29%2C_july_2012.jpg"
+            alt="Formaciones rocosas de color ocre bajo un cielo azul despejado en un parque nacional"
+          />
+          <figcaption>Formaciones rocosas del desierto</figcaption>
+        </figure>
+
+        <!-- Imagen 3: alt presente y descriptivo (antes faltaba el atributo alt) -->
+        <figure>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/VAN_CAT.jpg/1024px-VAN_CAT.jpg"
+            alt="Gato blanco con ojos de diferente color, uno azul y otro ámbar, mirando a la cámara"
+          />
+          <figcaption>Gato Van, una raza con ojos heterocromáticos</figcaption>
+        </figure>
+      </div>
+
+      <h2>Ecosistemas destacados</h2>
+
+      <!-- Etiqueta semántica 3: section -->
+      <section>
+        <p>
+          La Tierra alberga una gran variedad de biomas, cada uno con características únicas.
+          A continuación se presentan algunos de los más relevantes:
+        </p>
+
+        <ul>
+          <li><strong>Selva amazónica:</strong> el bosque tropical más extenso del mundo, hogar de millones de especies.</li>
+          <li><strong>Gran Barrera de Coral:</strong> el mayor arrecife de coral del planeta, ubicado frente a las costas de Australia.</li>
+          <li><strong>Desierto del Sahara:</strong> el desierto cálido más grande de la Tierra, con dunas que alcanzan cientos de metros.</li>
+          <li><strong>Tundra ártica:</strong> ecosistema de bajas temperaturas con flora resistente al permafrost.</li>
+        </ul>
+
+        <p>
+          Para aprender más sobre la biodiversidad global, puedes visitar la
+          <a href="https://www.iucn.org" target="_blank" rel="noopener noreferrer">
+            Unión Internacional para la Conservación de la Naturaleza (UICN)
+          </a>.
+        </p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Maravillas del Mundo Natural. Contenido con fines educativos.</p>
+    </footer>
+
+  </body>
+</html>
